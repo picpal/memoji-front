@@ -1,22 +1,19 @@
-// components/Sidebar.js
-import styles from "../styles/Sidebar.module.css";
+import styles from "./Sidebar.module.css";
 
 const Sidebar = ({ notes }) => {
   return (
-    <div className={styles.sidebar}>
-      <h2>Notes</h2>
-      <ul>
-        {notes.map((note) => (
-          <li key={note.id}>
-            <span>{note.title}</span>
-            <ul>
-              {note.pages.map((page) => (
-                <li key={page.id}>{page.title}</li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
+    <div>
+      <div>
+        <input type="text" className="memoji-title" value={"My Public Note"} />
+      </div>
+      <div className={styles.sidebar}>
+        <h2>Notes</h2>
+        <ul>
+          <li>list1</li>
+          <li>list2</li>
+          <li>list3</li>
+        </ul>
+      </div>
     </div>
   );
 };

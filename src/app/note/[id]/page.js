@@ -1,12 +1,12 @@
 // app/note/[id]/page.js
-import NoteViewer from '../../../components/NoteViewer';
+import NoteViewer from "../../../components/NoteViewer";
 
 const NotePage = ({ params }) => {
   const { id } = params;
   const content = `# Note ${id} Content \nThis is the content of note ${id}`;
 
   return (
-    <div style={{ flex: 1 }}>
+    <div>
       <NoteViewer content={content} />
     </div>
   );

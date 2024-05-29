@@ -1,14 +1,32 @@
-// app/layout.js
-import '../styles/globals.css';
-import Header from '../components/Header';
+"use client";
+
+import { usePathname } from "next/navigation";
+import "../styles/globals.css";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const isWritePage = pathname === "/write";
+
+  console.log("isWritePage : " + isWritePage);
+
   return (
-    <html lang="en">
+    <html lang="ko">
       <body>
-        <Header />
-        <div style={{ display: 'flex' }}>
-          {children}
+        <div className="wrapper">
+          {!isWritePage && (
+            <div>
+              <div className="left-section">
+                <Sidebar />
+              </div>
+              <div className="right-section">
+                <Header />
+                <div>{children}</div>
+              </div>
+            </div>
+          )}
+          {isWritePage && <div>{children}</div>}
         </div>
       </body>
     </html>
