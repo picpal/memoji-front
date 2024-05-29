@@ -1,12 +1,16 @@
-import styles from "./Sidebar.module.css";
+import styles from "../styles/Sidebar.module.css";
 
-const Sidebar = ({ notes }) => {
+const Sidebar = () => {
   return (
     <div>
       <div>
-        <input type="text" className="memoji-title" value={"My Public Note"} />
+        <input
+          type="text"
+          className={styles.border_0}
+          defaultValue={"My Public Note"}
+        />
       </div>
-      <div className={styles.sidebar}>
+      <div>
         <h2>Notes</h2>
         <ul>
           <li>list1</li>

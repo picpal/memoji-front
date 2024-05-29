@@ -9,14 +9,12 @@ export default function RootLayout({ children }) {
   const pathname = usePathname();
   const isWritePage = pathname === "/write";
 
-  console.log("isWritePage : " + isWritePage);
-
   return (
     <html lang="ko">
       <body>
-        <div className="wrapper">
+        <div>
           {!isWritePage && (
-            <div>
+            <div className="wrapper">
               <div className="left-section">
                 <Sidebar />
               </div>
