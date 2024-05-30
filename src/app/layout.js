@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import "../styles/globals.css";
+import "../styles/reset.css";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
   const isWritePage = pathname === "/write";
 
   return (
-    <html lang="ko">
+    <html lang="ko"> 
       <body>
         <div>
           {!isWritePage && (

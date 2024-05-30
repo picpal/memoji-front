@@ -1,3 +1,51 @@
+/* Project title */
 .border_0 {
   border: none;
+}
+
+.mt_6{
+  margin-top:24px;
+}
+
+/* Notes gap */
+.note_section{
+  margin-top: 24px;
+}
+
+/* Notes */
+.note_title{
+  color: #6D6D6D;
+  padding:14px 0;
+  font-size:20px
+}
+
+.note{
+  padding: 2px 4px 2px 36px;
+}
+.note:hover{
+  background: #EAEAEA;
+}
+
+.note_depth_01{
+  margin-left:12px;
+}
+
+.note_depth_02{
+  margin-left:24px;
+}
+
+.note_depth_03{
+  margin-left:36px;
+}
+
+.note_depth_04{
+  margin-left:48px;
+}
+
+/* pages */
+.page{
+  padding: 2px 4px 2px 36px;
+}
+.page:hover{
+  background: #EAEAEA;
 }
