@@ -14,20 +14,34 @@
 }
 
 /* Notes */
-.subject {
+.subject input {
   color: #6D6D6D;
-  padding: 14px 0;
-  font-size: 20px
+  padding: 4px 0 4px 4px;
+  margin: 12px 0;
+  font-size: 16px
 }
 
 .note_title {
-  font-size: 16px;
+  font-size: 14px;
   padding: 4px;
 }
 
 .note {
   padding: 2px 4px 2px 36px;
 }
+
+.note_wrapper h2,
+.note_wrapper h3,
+.note_wrapper h4,
+.note_wrapper li {
+  padding: 6px 12px 6px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 .note_wrapper h2:hover,
 .note_wrapper h3:hover,
@@ -37,7 +51,7 @@
 }
 
 .note_depth_01 {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 .note_depth_02 {
@@ -45,13 +59,28 @@
 }
 
 .note_depth_03 {
-  margin-left: 36px;
+  margin-left: 40px;
 }
 
 .note_depth_04 {
+  margin-left: 56px;
+}
+
+.page_depth_01 {
+  margin-left: 16px;
+}
+
+.page_depth_02 {
+  margin-left: 32px;
+}
+
+.page_depth_03 {
   margin-left: 48px;
 }
 
+.page_depth_04 {
+  margin-left: 64px;
+}
 /* pages */
 .page {
   padding: 2px 4px 2px 36px;

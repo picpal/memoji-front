@@ -1,8 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import "../styles/globals.css";
 import "../styles/reset.css";
+import "../styles/globals.css";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 

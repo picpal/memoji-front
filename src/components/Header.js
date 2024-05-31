@@ -4,17 +4,31 @@ import styles from "../styles/Header.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <h1>My Blog</h1>
-      <nav>
-        <ul>
+      <ul className={styles.bredcrumb}>
+        <li>
+          <a>First Note</a>
+        </li>
+        <li>&#47;</li>
+        <li>
+          <a>Master Project Name</a>
+        </li>
+        <li>&#47;</li>
+        <li>
+          <a>Sub Project Name</a>
+        </li>
+        <li>&#47;</li>
+        <li>
+          <a>Developer write file</a>
+        </li>
+      </ul>
+
+      <nav >
+        <ul className={styles.menu}>
           <li>
-            <a href="/">Home</a>
+            <a>Search</a>
           </li>
           <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
+            <a>Menu</a>
           </li>
         </ul>
       </nav>
