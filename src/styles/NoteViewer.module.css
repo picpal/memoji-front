@@ -1,7 +1,7 @@
 /* styles/NoteViewer.module.css */
 .viewer {
   padding: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
-  margin-top: 20px;
+  margin-top: 80px;
+  width: 600px;
+  margin:80px auto 0 auto;
 }

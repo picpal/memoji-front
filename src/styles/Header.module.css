@@ -1,6 +1,6 @@
 .header{
   width: clac(100%-24px);
-  padding: 20px 12px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -8,6 +8,10 @@
 .menu{
   display: flex;
   gap:12px;
+}
+
+.menu li{
+  cursor:pointer
 }
 
 .bredcrumb{
