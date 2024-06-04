@@ -1,68 +1,72 @@
-.write_wrapper{
+.write_wrapper {
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
 
-.write_wrapper > div{
+.write_wrapper>div {
     flex-grow: 1;
-    flex-basis:50%;
+    flex-basis: 50%;
 }
 
-.left_section{
-    padding:36px;
-    position:relative;
+.left_section {
+    padding: 36px;
+    position: relative;
 }
+
 
 .title {
-    padding:20px 0;
-    border-bottom: 1px solid #ccc;;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    ;
 }
 
-.title input{
-    border:0;
-    font-size:44px;
+.title input {
+    border: 0;
+    font-size: 44px;
     outline: none;
 }
 
-.tags{
+.tags {
     padding: 20px 0;
 }
 
-.tags input{
-    border:0;
-    font-size:18px;
-    outline:none;
+.tags input {
+    border: 0;
+    font-size: 18px;
+    outline: none;
 }
 
 .toolbar {
-    padding:20px 0;
+    padding: 20px 0;
     display: flex;
-    gap:16px;
+    gap: 16px;
 }
 
-.toolbar button{
-    width:20px;
-    height:20px;
+.toolbar button {
+    width: 20px;
+    height: 20px;
     text-align: center;
 }
 
-.editor{
-    margin-top:12px;
+.editor {
+    margin-top: 12px;
+    height: calc(100% - 280px);
+    overflow-y: scroll;
 }
 
-.editor textarea{
-    border:0;
-    width:100%;
+.editor textarea {
+    border: 0;
+    width: 100%;
 }
 
-.left_footer{
+.left_footer {
     display: flex;
     position: absolute;
-    bottom:24px;
+    bottom: 24px;
     justify-content: space-between;
-    width:calc(100% - 72px);
+    width: calc(100% - 72px);
 }
 
 @media (max-width: 1024px) {

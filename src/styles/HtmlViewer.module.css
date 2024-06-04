@@ -1,0 +1,101 @@
+.viewer_wrapper {
+  padding: 36px;
+}
+
+.viewer_title {
+  font-size: 44px;
+  height: 44px;
+  padding: 20px 0;
+}
+
+.viewer {
+  font-size: 16px;
+  color: #333;
+  line-height: 24px;
+  height: calc(100% - 133px);
+  overflow-y: scroll;
+}
+
+.viewer h1 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.viewer h2 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.viewer h3 {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.viewer h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.viewer h5 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.viewer a {
+  text-decoration: none;
+  color: #2753cb;
+}
+
+.viewer table {
+  margin: 4px 0;
+  border-collapse: collapse;
+}
+
+.viewer ul {
+  margin: 2px 0;
+}
+
+.viewer ul li {
+  text-indent: 28px;
+}
+
+.viewer table th,
+.viewer table td {
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+}
+
+.viewer blockquote {
+  border-left: 3px solid #f95656;
+  padding-left: 12px;
+  margin: 4px 0 8px 0;
+}
+
+.viewer del {
+  color: #9e9696;
+}
+
+.viewer pre {
+  margin: 4px 0;
+}
+
+.viewer code {
+  border-radius: 6px;
+}
+
+.viewer hr {
+  border: 1px solid #efefef;
+}
+
+.viewer strong {
+  color: #000;
+  font-weight: 700;
+}
+
+.viewer em {
+  font-style: italic;
+}
+
+.viewer img {
+  margin: 8px 0;
+}
