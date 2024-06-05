@@ -53,7 +53,7 @@
 .editor {
     margin-top: 12px;
     height: calc(100% - 280px);
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 .editor textarea {
