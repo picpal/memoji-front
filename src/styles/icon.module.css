@@ -1,0 +1,21 @@
+.icon {
+  background: url(/icons/icons.svg);
+  background-size: full;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.note {
+  background-position: 0 -48px;
+}
+
+.page {
+  background-position: -24px -48px;
+}
+
+.write {
+  background-position: -120px -48px;
+}
+
+.menu {}

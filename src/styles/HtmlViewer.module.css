@@ -1,6 +1,5 @@
 .viewer_wrapper {
   padding: 36px;
-  background-color: #f9f9f9;
 }
 
 .viewer_title {
@@ -14,7 +13,7 @@
   color: #333;
   line-height: 24px;
   height: calc(100% - 133px);
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .viewer h1 {

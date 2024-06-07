@@ -1,4 +1,5 @@
 import styles from "../styles/Sidebar.module.css";
+import icon from "../styles/icon.module.css";
 
 const Sidebar = () => {
   return (
@@ -24,19 +25,40 @@ const Sidebar = () => {
           />
         </h1>
         <div className={styles.note_wrapper}>
-          <h2 className={`${styles.note_title} ${styles.note_depth_01}`}>Master Project Name</h2>
+          <h2 className={`${styles.note_title} ${styles.note_depth_01}`}>
+            <span className={`${icon.icon} ${icon.note}`} />
+            <span>Master Project Name</span>
+          </h2>
           <div>
-            <h3 className={`${styles.note_title} ${styles.note_depth_02}`}>Sub Project Name</h3>
+            <h3 className={`${styles.note_title} ${styles.note_depth_02}`}>
+              <span className={`${icon.icon} ${icon.note}`} />
+              <span>Sub Project Name</span>
+            </h3>
             <ul>
-              <li className={`${styles.page_depth_02}`}>Developer Write file_#01</li>
-              <li className={`${styles.page_depth_02}`}>Developer Write file_#02</li>
+              <li className={`${styles.page} ${styles.page_depth_02}`}>
+                <span className={`${icon.icon} ${icon.page}`} />
+                <span>page Name subject</span>
+              </li>
+              <li className={`${styles.page} ${styles.page_depth_02}`}>
+                <span className={`${icon.icon} ${icon.page}`} />
+                <span>page Name subject</span>
+              </li>
             </ul>
             <div>
-              <h4 className={`${styles.note_title} ${styles.note_depth_03}`}>Sub Project Name</h4>
+              <h4 className={`${styles.note_title} ${styles.note_depth_03}`}>
+                <span className={`${icon.icon} ${icon.note}`} />
+                <span>Sub Project Name</span>
+              </h4>
               {/* pages */}
               <ul>
-                <li className={`${styles.page_depth_03}`}>Developer Write file_#01</li>
-                <li className={`${styles.page_depth_03}`}>Developer Write file_#02</li>
+                <li className={`${styles.page} ${styles.page_depth_03}`}>
+                  <span className={`${icon.icon} ${icon.page}`} />
+                  <span>page Name subject</span>
+                </li>
+                <li className={`${styles.page} ${styles.page_depth_03}`}>
+                  <span className={`${icon.icon} ${icon.page}`} />
+                  <span>page Name subject</span>
+                </li>
               </ul>
             </div>
           </div>
