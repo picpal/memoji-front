@@ -1,21 +1,40 @@
-.header{
-  width: clac(100%-24px);
+.header {
+  width: calc(100% - 24px);
   padding: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.menu{
+.menu {
   display: flex;
-  gap:12px;
+  gap: 12px;
 }
 
-.menu li{
-  cursor:pointer
+.menu li {
+  cursor: pointer;
 }
 
-.bredcrumb{
+.bredcrumb {
   display: flex;
-  gap:10px;
-  padding-left:28px;
+  align-items: center;
+  gap: 10px;
+}
+
+.bredcrumb li:nth-child(1) {
+  cursor: default;
+}
+
+.bredcrumb li {
+  cursor: pointer;
+}
+
+.menu {
+  width: 60px;
+  padding-right: 12px;
+}
+
+.menu li:hover {
+  opacity: 0.4;
+  ;
 }

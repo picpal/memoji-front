@@ -1,10 +1,14 @@
 // components/Header.js
 import styles from "../styles/Header.module.css";
+import icon from "../styles/icon.module.css";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <ul className={styles.bredcrumb}>
+        <li>
+          <span className={`${icon.icon} ${icon.book}`} />
+        </li>
         <li>
           <a>First Note</a>
         </li>
@@ -22,13 +26,17 @@ const Header = () => {
         </li>
       </ul>
 
-      <nav >
+      <nav>
         <ul className={styles.menu}>
           <li>
-            <a>Search</a>
+            <a>
+              <span className={`${icon.icon} ${icon.search}`} />
+            </a>
           </li>
           <li>
-            <a>Menu</a>
+            <a>
+              <span className={`${icon.icon} ${icon.menu}`} />
+            </a>
           </li>
         </ul>
       </nav>

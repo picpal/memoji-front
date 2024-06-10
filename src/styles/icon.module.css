@@ -18,4 +18,14 @@
   background-position: -120px -48px;
 }
 
-.menu {}
+.book {
+  background-position: -48px -47px;
+}
+
+.search {
+  background-position: -24px -71px;
+}
+
+.menu {
+  background-position: -48px -71px;
+}

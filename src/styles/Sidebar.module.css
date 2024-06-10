@@ -16,18 +16,23 @@
 /* Notes */
 .subject input {
   color: #6D6D6D;
-  padding: 4px 0 4px 4px;
-  margin: 12px 0;
+  padding: 6px;
+  margin: 12px 0 4px 0;
   font-size: 16px
 }
 
 .note_title {
-  font-size: 14px;
+  font-size: 15px;
   padding: 4px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+.note_title input {
+  font-size: 16px;
+  padding: 6px;
 }
 
 .note {
@@ -55,19 +60,19 @@
 }
 
 .note_depth_01 {
-  margin-left: 8px;
+  margin-left: 0px;
 }
 
 .note_depth_02 {
-  margin-left: 24px;
+  margin-left: 11px;
 }
 
 .note_depth_03 {
-  margin-left: 40px;
+  margin-left: 27px;
 }
 
 .note_depth_04 {
-  margin-left: 56px;
+  margin-left: 43px;
 }
 
 
@@ -84,17 +89,17 @@
 }
 
 .page_depth_01 {
-  margin-left: 16px;
+  margin-left: 11px;
 }
 
 .page_depth_02 {
-  margin-left: 32px;
+  margin-left: 27px;
 }
 
 .page_depth_03 {
-  margin-left: 48px;
+  margin-left: 43px;
 }
 
 .page_depth_04 {
-  margin-left: 64px;
+  margin-left: 59px;
 }

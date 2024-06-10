@@ -45,15 +45,71 @@
 }
 
 .toolbar button {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
     text-align: center;
+}
+
+.toolbar button:hover {
+    opacity: 0.4;
 }
 
 .editor {
     margin-top: 12px;
     height: calc(100% - 280px);
     overflow: auto;
+}
+
+.icon {
+    background: url(/icons/icons.svg);
+    background-size: full;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.heading_1 {
+    background-position: 0px 0px;
+}
+
+.heading_2 {
+    background-position: -24px 0px;
+}
+
+.heading_3 {
+    background-position: -48px 0px;
+}
+
+.heading_4 {
+    background-position: -72px 0px;
+}
+
+.heading_5 {
+    background-position: -96px 0px;
+}
+
+.bold {
+    background-position: -120px 0px;
+}
+
+.italic {
+    background-position: -144px 0px;
+}
+
+.remove {
+    background-position: -168px 0px;
+}
+
+.image {
+    background-position: -192px 0px;
+}
+
+.code {
+    background-position: -216px 0px;
 }
 
 .editor textarea {

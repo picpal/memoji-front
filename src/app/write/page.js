@@ -99,17 +99,36 @@ const WritePage = ({ docId }) => {
           <input placeholder="태그를 입력해주세요." />
         </div>
         <div className={styles.toolbar}>
-          <button>H1</button>
-          <button>H2</button>
-          <button>H3</button>
-          <button>H4</button>
-          <button>H5</button>
-          <button>B</button>
-          <button>I</button>
-          <button>Q </button>
-          <button>B</button>
-          <button>I</button>
-          <button>C</button>
+          <button>
+            <span className={`${styles.icon} ${styles.heading_1}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.heading_2}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.heading_3}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.heading_4}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.heading_5}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.bold}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.italic}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.remove}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.image}`} />
+          </button>
+          <button>
+            <span className={`${styles.icon} ${styles.code}`} />
+          </button>
         </div>
         <div className={styles.editor}>
           <div ref={editorDiv}></div>
