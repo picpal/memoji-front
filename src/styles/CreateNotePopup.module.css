@@ -1,0 +1,51 @@
+.popup {
+  width: 800px;
+  height: 270px;
+  padding: 65px 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  margin-top: 200px;
+}
+
+.spot_line {
+  width: 87px;
+  height: 0px;
+  border: 2px solid salmon;
+  margin: 4px 0 28px 0;
+}
+
+.sub_title {
+  font-size: 28px;
+}
+
+.note_property_wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.note_property {
+  width: 60%;
+}
+
+
+.note_property input {
+  width: 95%;
+  line-height: 44px;
+  font-size: 40px;
+  border: 0;
+  background: none;
+  background-color: #fff;
+  outline: none;
+}
+
+.note_property p {
+  padding:
+}
+
+
+.parent_note_list {
+  width: 40%;
+}

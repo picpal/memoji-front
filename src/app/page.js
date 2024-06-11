@@ -1,3 +1,4 @@
+import CreateNotePopup from "../components/CreateNotePopup";
 import NoteViewer from "../components/NoteViewer";
 
 export default function Home() {

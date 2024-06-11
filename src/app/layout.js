@@ -5,15 +5,17 @@ import "../styles/reset.css";
 import "../styles/globals.css";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
+import CreateNotePopup from "../components/CreateNotePopup";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const isWritePage = pathname === "/write";
 
   return (
-    <html lang="ko"> 
+    <html lang="ko">
       <body>
         <div>
+          <CreateNotePopup />
           {!isWritePage && (
             <div className="wrapper">
               <div className="left-section">
