@@ -12,8 +12,8 @@ const CreateNotePopup = (props) => {
             <div className={styles.spot_line}></div>
             <div>
               <p className={styles.sub_title}>Note 속성을 선택해 주세요</p>
-              <div>
-                <label htmlFor="">
+              <div className={styles.note_property_selector}>
+                <label>
                   <input type="radio" name="note_option" />
                   <span>Master Note</span>
                 </label>
@@ -24,24 +24,20 @@ const CreateNotePopup = (props) => {
               </div>
             </div>
           </div>
-          <div className={styles.parent_note_list}>
+          <div className={styles.parent_notes}>
             <p>상위 노트를 선택해주세요</p>
-            <ul>
+            <ul className={styles.note_list}>
               <li>
                 <span>First Note</span>
               </li>
-              <li>
+              <li className={styles.note_depth_02}>
+                <span>Favorite Note</span>
+              </li>
+              <li className={styles.note_depth_03}>
+                <span>Title Lorem Ipsum Title Lorem Ipsum</span>
+              </li>
+              <li className={styles.note_depth_03}>
                 <span>Second Note</span>
-                <ul>
-                  <li>
-                    <span>Favorite Note</span>
-                    <ul>
-                      <li>
-                        <span>Title Lorem Ipsum Title Lorem Ipsum</span>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
               </li>
               <li>
                 <span>Third Note</span>
@@ -50,9 +46,9 @@ const CreateNotePopup = (props) => {
           </div>
         </div>
 
-        <div>
-          <button>Create</button>
-          <button>Cancel</button>
+        <div className={styles.popup_buttons}>
+          <a>Cancel</a>
+          <a>Create</a>
         </div>
       </div>
     </PopupBackground>
