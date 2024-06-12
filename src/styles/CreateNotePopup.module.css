@@ -1,6 +1,6 @@
 .popup {
   width: fit-content;
-  height: 270px;
+  height: fit-content;
   padding: 65px 50px;
   margin: 0 auto;
   display: flex;
@@ -14,26 +14,27 @@
   width: 87px;
   height: 0px;
   border: 2px solid salmon;
-  margin: 4px 0 28px 0;
+  margin: 4px 0 4px 0;
 }
 
 .sub_title {
-  font-size: 28px;
-  padding: 12px 0 24px 0;
+  font-size: 24px;
+  padding: 18px 0;
+  margin-top: 16px
 }
 
 .note_property_wrap {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .note_property {
-  width: 60%;
+  flex-grow: 2;
 }
 
-
 .note_property>input {
-  width: 92%;
+  width: 88%;
   line-height: 44px;
   font-size: 40px;
   border: 0;
@@ -45,9 +46,10 @@
 
 .note_property_selector {
   display: flex;
+  flex-grow: 1;
   width: 100%;
   gap: 24px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 .note_property_selector>label {
@@ -56,13 +58,22 @@
   cursor: pointer;
 }
 
+.note_property_selector>select {
+  font-size: 16px;
+  padding: 6px 8px 6px 8px;
+  border-radius: 4px;
+  width: 60%;
+  border-color: #efefef;
+}
+
 .note_property_selector>label>input {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
 }
 
 .note_property_selector>label>span {
-  font-size: 24px;
+  font-size: 20px;
   color: #BABABA;
   margin-left: 12px;
 }
@@ -79,12 +90,15 @@
 .note_list {
   margin-top: 20px;
   overflow: auto;
-  height: 200px;
+  height: 220px;
 }
 
 .note_list li {
   padding: 8px 8px 8px 12px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 20px;
 }
 
@@ -93,34 +107,33 @@
   border-radius: 12px;
 }
 
-.parent_notes li span {
+.parent_notes li>span {
   display: block;
-  width: 100%;
   text-wrap: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .note_depth_02 {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .note_depth_03 {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 
 .note_depth_04 {
-  margin-left: 24px;
+  margin-left: 30px;
 }
 
 .note_depth_05 {
-  margin-left: 32px;
+  margin-left: 40px;
 }
 
 
 
 .popup_buttons {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row-reverse;
   gap: 20px;
