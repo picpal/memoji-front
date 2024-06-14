@@ -1,5 +1,5 @@
 // app/note/[id]/page.js
-import NoteViewer from "../../../components/NoteViewer";
+import NoteViewer from "../../../components/MainViewer";
 
 const NotePage = ({ params }) => {
   const { id } = params;

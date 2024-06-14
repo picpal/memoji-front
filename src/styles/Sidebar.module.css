@@ -3,6 +3,10 @@
   border: none;
 }
 
+.mt_1 {
+  margin-top: 4px;
+}
+
 .mt_6 {
   margin-top: 24px;
 }
@@ -17,7 +21,7 @@
 .subject input {
   color: #6D6D6D;
   padding: 6px;
-  margin: 12px 0 4px 0;
+  margin: 19px 0 0 0;
   font-size: 16px
 }
 

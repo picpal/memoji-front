@@ -12,7 +12,7 @@ const CreateNotePopup = (props) => {
             <input type="text" placeholder="Note 명칭을 적어주세요" />
             <div className={styles.spot_line}></div>
             <div>
-              <p className={styles.sub_title}>Folder를 선택해주세요</p>
+              <p className={styles.sub_title}>Subject를 선택해주세요</p>
               <div className={styles.note_property_selector}>
                 <select>
                   <option value="A">First Note</option>

@@ -6,6 +6,15 @@
   display: inline-block;
 }
 
+.icon32 {
+  background: url(/icons/icons.svg);
+  background-size: full;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+
 .note {
   background-position: 0 -48px;
 }
@@ -28,4 +37,8 @@
 
 .menu {
   background-position: -48px -71px;
+}
+
+.bookmark {
+  background-position: 0 -124px;
 }

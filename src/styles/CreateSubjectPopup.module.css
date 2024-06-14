@@ -11,11 +11,12 @@
 }
 
 .spot_line {
-  width: 87px;
+  width: 141px;
   height: 0px;
   border: 2px solid salmon;
   margin: 4px 0 4px 0;
 }
+
 
 .sub_title {
   font-size: 24px;
@@ -29,10 +30,6 @@
   flex-wrap: nowrap;
 }
 
-.note_property {
-  flex-grow: 2;
-}
-
 .note_property>input {
   width: 88%;
   line-height: 44px;
@@ -43,43 +40,8 @@
   outline: none;
 }
 
-
-.note_property_selector {
-  display: flex;
-  flex-grow: 1;
-  width: 100%;
-  gap: 24px;
-  margin-top: 0px;
-}
-
-.note_property_selector>label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.note_property_selector>select {
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 4px;
-  width: 60%;
-  border-color: #efefef;
-}
-
-.note_property_selector>label>input {
-  width: 20px;
-  height: 20px;
-  margin: 0;
-}
-
-.note_property_selector>label>span {
-  font-size: 20px;
-  color: #BABABA;
-  margin-left: 12px;
-}
-
 .parent_notes {
-  width: 40%;
+  width: 100%;
 }
 
 .parent_notes>p {
@@ -95,7 +57,9 @@
 }
 
 .note_list li {
-  padding: 8px 8px 8px 12px;
+  padding: 6px 8px 6px 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -106,6 +70,11 @@
 .note_list li:hover {
   background-color: #f5f5f5;
   border-radius: 12px;
+}
+
+.note_list_active {
+  border-radius: 12px;
+  background-color: #f5f5f5;
 }
 
 .parent_notes li>span {

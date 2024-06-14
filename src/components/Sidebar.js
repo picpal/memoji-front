@@ -16,7 +16,7 @@ const Sidebar = () => {
       </div>
 
       {/* Notes */}
-      <div className={styles.mt_6}>
+      <div className={styles.mt_1}>
         <h1 className={styles.subject}>
           <input
             type="text"
