@@ -7,47 +7,22 @@ import { markdown } from "@codemirror/lang-markdown";
 import { syntaxHighlighting } from "@codemirror/language";
 import { indentWithTab, history, undo, redo } from "@codemirror/commands";
 import { editorTheme, customHighlightStyle } from "../../hooks/EditorStyles";
-import { setupMarked } from "../../hooks/setupMarked";
 import { useFetchDocument } from "../../hooks/fetchDocument";
 import "highlight.js/styles/github-dark.css";
 import styles from "../../styles/Write.module.css";
 import htmlViewer from "../../styles/HtmlViewer.module.css";
-import mermaid from "mermaid";
+import Preview from "../../components/Preview";
+import TollbarButton from "../../components/TollbarButton";
 
 const WritePage = ({ docId }) => {
   const editorDiv = useRef(null);
   const [viewerTitle, setViewerTitle] = useState("");
   const { docContent, isLoading, error } = useFetchDocument(docId);
-  const [preview, setPreview] = useState("");
-  const marked = setupMarked();
-
-  const updatePreview = (doc) => {
-    setPreview(marked(doc.toString()));
-  };
+  const [content, setContent] = useState("");
 
   const updateViewerTitle = (e) => {
     setViewerTitle(e.target.value);
   };
-
-  const errorHandler = (err) => {
-    console.error(err); // 콘솔에 에러 로그 출력
-    // 여기서 커스텀 에러 메시지를 DOM에 추가하거나 상태로 관리할 수 있습니다.
-    const errorContainer = document.querySelector("#mermaid-error-container");
-    if (errorContainer) {
-      errorContainer.innerHTML =
-        "죄송합니다, 다이어그램을 렌더링하는 동안 문제가 발생했습니다.";
-    }
-  };
-
-  useEffect(() => {
-    mermaid.initialize({
-      startOnLoad: true,
-      securityLevel: "loose",
-      theme: "default",
-      errorHandler,
-    });
-    mermaid.contentLoaded();
-  });
 
   useEffect(() => {
     if (!editorDiv.current) return;
@@ -66,7 +41,7 @@ const WritePage = ({ docId }) => {
         EditorView.lineWrapping,
         EditorView.updateListener.of((update) => {
           if (update.docChanged) {
-            updatePreview(update.state.doc);
+            setContent(update.state.doc);
           }
         }),
         editorTheme,
@@ -99,9 +74,7 @@ const WritePage = ({ docId }) => {
           <input placeholder="태그를 입력해주세요." />
         </div>
         <div className={styles.toolbar}>
-          <button>
-            <span className={`${styles.icon} ${styles.heading_1}`} />
-          </button>
+          <TollbarButton tag={"h1"} />
           <button>
             <span className={`${styles.icon} ${styles.heading_2}`} />
           </button>
@@ -141,10 +114,7 @@ const WritePage = ({ docId }) => {
 
       <div className={htmlViewer.viewer_wrapper}>
         <div className={htmlViewer.viewer_title}>{viewerTitle}</div>
-        <div
-          className={htmlViewer.viewer}
-          dangerouslySetInnerHTML={{ __html: preview }}
-        ></div>
+        <Preview markdownText={content} />
       </div>
     </div>
   );

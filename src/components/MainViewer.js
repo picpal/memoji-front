@@ -1,5 +1,5 @@
 import styles from "../styles/MainViewer.module.css";
-import htmlViewer from "../styles/HtmlViewer.module.css";
+import Preview from "./Preview";
 import icon from "../styles/icon.module.css";
 
 const NoteViewer = ({ content }) => {
@@ -21,10 +21,7 @@ const NoteViewer = ({ content }) => {
         <div className={styles.blank_line}></div>
 
         {/* write page의 viewer처럼 랜더링해서 출력필요 */}
-        <div
-          className={htmlViewer.viewer}
-          dangerouslySetInnerHTML={{ __html: content }}
-        ></div>
+        <Preview markdownText={content} />
       </article>
     </div>
   );
